@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Paiement — KamerMall</title>
+  <meta name="description" content="Page de paiement KamerMall.">
+  <link rel="canonical" href="https://metoufabrice14-lab.github.io/kamermall/checkout.html">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header><div class="logo">KamerMall</div></header>
+
+<main class="section" style="max-width:800px; margin:auto;">
+  <h2>Paiement</h2>
+  <p>Cette page est un exemple. Pour production, connectez Stripe / PayPal et utilisez une passerelle sécurisée.</p>
+  <p>Montant : <span id="checkout-total">0 FCFA</span></p>
+  <button class="btn" id="pay-now">Payer maintenant</button>
+</main>
+
+<footer><p style="text-align:center;">© 2025 KamerMall</p></footer>
+
+<script src="assets/script.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const cart = JSON.parse(localStorage.getItem('km_cart')||'[]');
+    const total = cart.reduce((s,i)=>s + Number(i.price), 0);
+    document.getElementById('checkout-total').innerText = total.toLocaleString() + ' FCFA';
+    document.getElementById('pay-now').addEventListener('click', ()=> alert('Page de paiement à implémenter (Stripe/PayPal).'));
+  });
+</script>
+</body>
+</html>

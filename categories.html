@@ -1,47 +1,55 @@
-<!DOCTYPE html>
+<!doctype html> 
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Catégories - KamerMall</title>
-    <link rel="stylesheet" href="assets/styles.css" />
+  <meta charset="utf-8">
+  <title>Catégories - KamerMall</title>
+  <meta name="description" content="Catégories de produits sur KamerMall : Électronique, Mode, Maison, Téléphones, Accessoires.">
+
+  <!-- 🔥 Nouvelle URL -->
+  <link rel="canonical" href="https://metoufabrice14-lab.github.io/kamermall/categories.html">
+  <link rel="alternate" hreflang="fr" href="https://metoufabrice14-lab.github.io/kamermall/categories.html">
+  <link rel="alternate" hreflang="en" href="https://metoufabrice14-lab.github.io/kamermall/categories-en.html">
+
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
-<header class="topbar">
-    <div class="container">
-        <div class="left">🌓 <button id="lang-switch">FR / EN</button></div>
-        <div class="right">🛒 <span id="cart-count">0</span></div>
-    </div>
+<header>
+  <div class="logo">KamerMall</div>
+  <div class="header-right">
+    <button id="theme-toggle" class="control-btn">🌓</button>
+    <button class="control-btn lang-btn" data-lang="fr">FR</button>
+    <button class="control-btn lang-btn" data-lang="en">EN</button>
+    <a href="cart.html" class="control-btn">🛒 <span id="cart-count">0</span></a>
+  </div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="categories.html">Catégories</a>
+  </nav>
 </header>
 
-<nav class="navbar">
-    <div class="container nav-flex">
-        <div class="logo"><a href="index.html">KamerMall</a></div>
-        <ul class="menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a class="active" href="categories.html">Catégories</a></li>
-            <li><a href="vendors.html">Vendeurs</a></li>
-        </ul>
-    </div>
-</nav>
-
-<section class="section">
-    <h1 class="section-title">Toutes les Catégories</h1>
+<main>
+  <section class="section">
+    <div class="section-title">Toutes les catégories</div>
     <div class="grid">
-        <a class="card" href="products/product1.html">Électronique</a>
-        <a class="card" href="products/product2.html">Mode & Beauté</a>
-        <a class="card" href="products/product3.html">Maison & Bureau</a>
-        <a class="card" href="products/product4.html">Téléphones & Accessoires</a>
-        <a class="card" href="products/product5.html">Services</a>
+      <a class="category-box" href="categories.html">Téléphones & Tablettes</a>
+      <a class="category-box" href="categories.html">Électronique & TV</a>
+      <a class="category-box" href="categories.html">Mode Homme</a>
+      <a class="category-box" href="categories.html">Mode Femme</a>
+      <a class="category-box" href="categories.html">Maison & Bricolage</a>
+      <a class="category-box" href="categories.html">Beauté & Cosmétiques</a>
+      <a class="category-box" href="categories.html">Supermarché</a>
+      <a class="category-box" href="categories.html">Enfants & Jouets</a>
     </div>
-</section>
+  </section>
+</main>
 
-<footer class="footer">
-    <div class="container">
-        <p>KamerMall © 2025 — Marketplace Camerounaise.</p>
-    </div>
+<footer>
+  <div class="footer-grid">
+    <div><h3>KamerMall</h3><p>Marketplace camerounaise fiable.</p></div>
+    <div><h3>Liens</h3><a href="index.html">Accueil</a></div>
+  </div>
 </footer>
 
-<script src="assets/script.js"></script>
+<script src="assets/script.js" defer></script>
 </body>
 </html>

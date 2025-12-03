@@ -31,7 +31,7 @@ Ce projet utilise une structure simple en **HTML / CSS / JS**, facile à gérer 
 3. Active GitHub Pages :  
    **Settings → Pages → Deploy from branch → main → root**
 4. Ton site sera accessible via :  
-   **https://TON-NOM.github.io/kamermall**
+   **https://metoufabrice14-lab.github.io/kamermall**
 
 ---
 
